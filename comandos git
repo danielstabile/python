@@ -1,0 +1,32 @@
+git config --global user.name "Daniel Stabile"
+git config --global user.email "danielstabile@gmail.com"
+git config --list
+
+untracked => unmodified => modified => stage
+
+git status
+git add nome_arquivo
+git commit -m "comentario"
+git commit -am "comentario => commit em todos arquivos em stage
+git log
+git log --author="nome autor"
+git shortlog
+git shortlog -sn => mostra apenas o nome e qtd de commit
+git show hash => ver o que foi alterado no commit buscando pela hash
+git diff => ver alterações
+git diff --name-only => lista apenas nomes de arquivos alterados
+git checkout nome_arquivo => desfaz edição de arquivo em modified
+git reset HEAD nome_arquivo => remove do stage e volta para unmodified
+git reset --soft --mixed --hard hash_anterior => desfaz commit (--soft:volta para stage/--mixed: volta para modified /--hard: limpa tudo)
+
+
+github
+git remote add origin https://github.com/danielstabile/python.git
+git push -u origin master (para onde vai: origin e de onde vem: master)
+git remote -v
+
+git checkout -b nome_branch => cria novo branch
+git branch => lista branch com * onde está setado
+git checkout nome_branch => para trocar de branch
+git branch -D nome_branch => para apagar
+
